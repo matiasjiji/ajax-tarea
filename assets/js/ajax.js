@@ -87,7 +87,7 @@ $('#agregar').click(function(){
 
                 var eliminar = $('.eliminar');
                 eliminar.click(function(){
-                    $(this).children('tr').remove();
+                    $(this).parents('tr').remove();
                 })
             });
         });
