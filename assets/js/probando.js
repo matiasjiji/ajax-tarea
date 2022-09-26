@@ -28,6 +28,15 @@ $('#titulo').text('Creando cosas en jquery')
 //     }
 // )
 
+
+// $('#agregarF').click(function(){
+//     confirm('estas seguro de querer agregar una fila');
+//     $('#tabla').append('<tr><td>'+
+//          prompt('ingrese id: ') + '</td><td>' + 
+//          prompt('ingrese nombre: ') + '</td><td>' + 
+//          prompt('ingrese correo: ') + '</td><td>' + 
+//          prompt('ingrese numero: ') + '</td><td>' + '<button type="button" class="eliminar">eliminar</button>' + '</td></tr>');
+// })
 $('#agregar').click(function(){
     $.get("https://my-json-server.typicode.com/alaravena/ldp3101/usuarios",
                 function (datos) { //los datos json lo guardamos en la variable datos y lo recorremos
