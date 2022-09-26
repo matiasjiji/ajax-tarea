@@ -92,7 +92,6 @@ $('#agregar').click(function(){
             });
         });
 })
-
                 //opcion 2
                 // $('.eliminar').click(function(){
                 // // var probando = $('tr');
