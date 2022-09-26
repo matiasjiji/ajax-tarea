@@ -84,26 +84,12 @@ $('#agregar').click(function(){
                 $('#table').append('<tr><td>'+ item.id + '</td><td>' + item.nombre + 
                 '</td><td>' + item.email + '</td><td>' + '</td><td>' + item.edad +
                 '</td><td><img src=' + item.avatar +'></td><td><button id="eliminar" class="eliminar" type="button">Quitar</button></td></tr>');
+                
+                var eliminar = $('.eliminar');
+                eliminar.click(function(){
+                    $(this).parents('tr').remove();
+                })
             });
-
-            //opcion 1
-                $('.eliminar').click(function(){
-                // var probando = $('tr');
-                // probando[index].remove();
-                var index = $('.eliminar').index(this) + 1
-                console.log(index);
-                var probando = $('tr');
-                probando[index].remove();
-                });
-
-            //opcion 2
-                // $('.eliminar').click(function(){
-                //     var columna = $('tr');
-                //     columna.on('click', function(){
-                //         $(this).remove();
-                //     })
-                // })
-
         });
 })
 //------------------------------------------------------------------------------------------------------------------------------------------
