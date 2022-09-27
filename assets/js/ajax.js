@@ -92,7 +92,7 @@ $('#agregar').click(function(){
             });
         });
 })
-                //opcion 2
+                //OPCION 2
                 // $('.eliminar').click(function(){
                 // // var probando = $('tr');
                 // // probando[index].remove();
@@ -101,7 +101,7 @@ $('#agregar').click(function(){
                 // var probando = $('tr');
                 // probando[index].remove();
                 // });
-                //opcion 3
+                //OPCION 3
                 // $('.eliminar').click(function(){
                 //     var probando = $('tr');
                 //     probando[1].remove();
