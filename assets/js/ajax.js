@@ -85,10 +85,10 @@ $('#agregar').click(function(){
                 '</td><td>' + item.email + '</td><td>' + '</td><td>' + item.edad +
                 '</td><td><img src=' + item.avatar +'></td><td><button id="eliminar" class="eliminar" type="button">Quitar</button></td></tr>');
 
-                // var eliminar = $('.eliminar');
-                // eliminar.click(function(){
-                //     $(this).parents('tr').remove();
-                // });
+                var eliminar = $('.eliminar');
+                eliminar.click(function(){
+                    $(this).parents('tr').remove();
+                });
             });
         });
 })
