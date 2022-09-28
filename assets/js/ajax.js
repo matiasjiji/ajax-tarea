@@ -83,14 +83,16 @@ $('#agregar').click(function(){
             $.each(data, function(i, item){
                 $('#table').append('<tr><td>'+ item.id + '</td><td>' + item.nombre + 
                 '</td><td>' + item.email + '</td><td>' + '</td><td>' + item.edad +
-                '</td><td><img src=' + item.avatar +'></td> <td><button id="eliminar" class="eliminar" type="button">Quitar</button></td> <td><button type="button" id="modal" class="modal">modal</button></td></tr>');
+                '</td><td><img src=' + item.avatar +'></td> <td><button id="eliminar" class="eliminar" type="button">Quitar</button></td> <td><button type="button" data-toggle="modal" data-target="#manual-ajax">modal</button></td></tr>');
 
                 var eliminar = $('.eliminar');
                 eliminar.click(function(){
                     $(this).parents('tr').remove();
                 });
+                
             });
         });
+        
 })
 
 
@@ -114,6 +116,5 @@ $('#agregar').click(function(){
                 //     var probando = $('tr');
                 //     probando[1].remove();
                 //     });
-    
 
 });
