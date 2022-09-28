@@ -93,6 +93,7 @@ $('#agregar').click(function(){
             });
         });
         
+        //CTRL + SHIFT + Z == DEVUELVE
 })
 
 
