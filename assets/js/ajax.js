@@ -90,7 +90,11 @@ $('#agregar').click(function(){
                     $(this).parents('tr').remove();
                 });
                 $('#exampleModal').click(function(){
-                    $('.modal-body').text('hola');
+                    var id = $('.bgid');
+                    var nombre = $('.bgname');
+                    var email = $('.bgemail');
+                    var edad = $('.bgedad');
+                    var moda = $('.modal-body');
                 })
             });
         });
