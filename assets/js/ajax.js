@@ -89,7 +89,9 @@ $('#agregar').click(function(){
                 eliminar.click(function(){
                     $(this).parents('tr').remove();
                 });
-                
+                $('#exampleModal').click(function(){
+                    $('.modal-body').text('hola');
+                })
             });
         });
         
