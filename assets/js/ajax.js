@@ -81,9 +81,9 @@ $('#agregar').click(function(){
     $.get('https://my-json-server.typicode.com/alaravena/ldp3101/usuarios',
         function(data){
             $.each(data, function(i, item){
-                $('#table').append('<tr><td>'+ item.id + '</td><td>' + item.nombre + 
-                '</td><td>' + item.email + '</td><td>' + '</td><td>' + item.edad +
-                '</td><td><img src=' + item.avatar +'></td> <td><button id="eliminar" class="eliminar" type="button">Quitar</button></td> <td><button type="button" data-toggle="modal" data-target="#manual-ajax">modal</button></td></tr>');
+                $('#table').append('<tr><td class="bgid">'+ item.id + '</td><td class="bgname">' + item.nombre + 
+                '</td><td class="bgemail">' + item.email + '</td><td class="bgedad">'  + item.edad +
+                '</td><td><img src=' + item.avatar +'></td> <td><button id="eliminar" class="eliminar" type="button">Quitar</button></td> <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button></td></tr>');
 
                 var eliminar = $('.eliminar');
                 eliminar.click(function(){
