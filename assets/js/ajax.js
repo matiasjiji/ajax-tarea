@@ -89,14 +89,16 @@ $('#agregar').click(function(){
                 eliminar.click(function(){
                     $(this).parents('tr').remove();
                 });
-                $('#exampleModal').click(function(){
-                    var id = $('.bgid');
-                    var nombre = $('.bgname');
-                    var email = $('.bgemail');
-                    var edad = $('.bgedad');
-                    var moda = $('.modal-body');
-                })
+                    var id = item.id;
+                    var nombre = item.nombre;
+                    var email = item.email;
+                    var edad = item.edad;
+                    var modal = $('.modal-body');
+                    $('tbody').show(function(){
+                        $('.modal-body').text(id + nombre + email + edad);
+                    })
             });
+
         });
         
         //CTRL + SHIFT + Z == DEVUELVE
