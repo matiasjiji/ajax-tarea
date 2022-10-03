@@ -89,17 +89,17 @@ $('#agregar').click(function(){
                 eliminar.click(function(){
                     $(this).parents('tr').remove();
                 });
-                    var id = item.id;
-                    var nombre = item.nombre;
-                    var email = item.email;
-                    var edad = item.edad;
+                    // var id = item.id;
+                    // var nombre = item.nombre;
+                    // var email = item.email;
+                    // var edad = item.edad;
                     // var id = $('.bgid');
                     // var nombre = $('.bgname');
                     // var email = $('.bgemail');
                     // var edad = $('.bgedad');
                     // var fila = $('.bgid') +  $('.bgname') + $('.bgemail') + $('.bgedad');
                     $('tbody').show(function(){
-                        $('.modal-body').text(id + ' ' + nombre + ' ' + email + ' ' + edad);
+                        $('.modal-body').text(item.id + ' ' + item.nombre + ' ' + item.email + ' ' + item.edad);
                         // $('.modal-body').text(id + ' ' + nombre + ' ' + email + ' ' + edad);
                         // $('.modal-body').text(fila);
                     })
