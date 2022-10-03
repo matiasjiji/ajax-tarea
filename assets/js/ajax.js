@@ -112,9 +112,7 @@ $('#agregar').click(function(){
         });
         
         //CTRL + SHIFT + Z == DEVUELVE
-})
-
-
+});
 
                 //OPCION 2
                 // $('.eliminar').click(function(){
