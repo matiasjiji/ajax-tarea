@@ -93,13 +93,14 @@ $('#agregar').click(function(){
                     var nombre = item.nombre;
                     var email = item.email;
                     var edad = item.edad;
+                    var modal = $('.modal-body');
                     // var id = $('.bgid');
                     // var nombre = $('.bgname');
                     // var email = $('.bgemail');
                     // var edad = $('.bgedad');
                     // var fila = $('.bgid') +  $('.bgname') + $('.bgemail') + $('.bgedad');
                     $('tbody').show(function(){
-                        $('.modal-body').text(id + ' ' + nombre + ' ' + email + ' ' + edad);
+                        modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad);
                         // $('.modal-body').text(id + ' ' + nombre + ' ' + email + ' ' + edad);
                         // $('.modal-body').text(fila);
                     })
