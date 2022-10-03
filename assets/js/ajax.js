@@ -113,11 +113,6 @@ $('#agregar').click(function(){
 
 
 
-
-
-
-
-
                 //OPCION 2
                 // $('.eliminar').click(function(){
                 // // var probando = $('tr');
