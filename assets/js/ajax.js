@@ -105,8 +105,8 @@ $('#agregar').click(function(){
                     //     // $('.modal-body').text(fila);
                     // })
                     $('.btn-modal').click(function(){
-                        $('tr').show(modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad));
-                        // $(this).parents('tr').show(modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad));
+                        // $('tr').show(modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad));
+                        $(this).parents('tr').show(modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad));
                     })
             });
 
