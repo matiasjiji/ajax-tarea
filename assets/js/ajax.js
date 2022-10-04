@@ -106,6 +106,7 @@ $('#agregar').click(function(){
                     // })
                     $('.btn-modal').click(function(){
                         $('tr').show(modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad));
+                        // $(this).parents('tr').show(modal.text(id + ' ' + nombre + ' ' + email + ' ' + edad));
                     })
             });
 
